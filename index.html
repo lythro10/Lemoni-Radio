@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- Style css -->
+<link rel="stylesheet" href="style.css">
+
+
+    <title>Lemoni Radio</title>
+  </head>
+  <body>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        //
+        // Description: Randomly change background color every 5 seconds
+        //
+        // NewcWare 1997
+        // Author: Scott Newcomer 3/1997
+        // Email: nuke@bright.net
+        //
+        function setbackground()
+        {
+        window.setTimeout( "setbackground()", 5000); // 5000 milliseconds delay
+        var index = Math.round(Math.random() * 9);
+        var ColorValue = "FFFFFF"; // default color - white (index = 0)
+        if(index == 1)
+        ColorValue = "FFCCCC"; //peach
+        if(index == 2)
+        ColorValue = "CCAFFF"; //violet
+        if(index == 3)
+        ColorValue = "A6BEFF"; //lt blue
+        if(index == 4)
+        ColorValue = "99FFFF"; //cyan
+        if(index == 5)
+         ColorValue = "D5CCBB"; //tan
+        if(index == 6)
+        ColorValue = "99FF99"; //lt green
+        if(index == 7)
+        ColorValue = "FFFF99"; //lt yellow
+        if(index == 8)
+        ColorValue = "FFCC99"; //lt orange
+        if(index == 9)
+        ColorValue = "CCCCCC"; //lt grey
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+        }
+        </script>
+        <body onload="setbackground();">
+</body>
+</html>
