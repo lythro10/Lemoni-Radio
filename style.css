@@ -1,0 +1,57 @@
+/* body{
+    transition: background-color 1s ease
+} */
+
+body {
+    background: repeating-linear-gradient(90deg, #ffde22, #5eb546);
+  }
+.padding-right-nav{
+    background-color: #5eb546;;
+    padding-left: 70%;
+    padding-right: 20%;
+    border: 1px yellow solid;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:#fde146;
+    font-weight:900;
+    font-size: large;
+}
+/* #logo_image{
+    margin-top: 5%;
+    margin-left: 5%;
+} */
+#social-media{
+    margin-left: 80% ;
+}
+
+#time{
+   
+    font-family: 'Ribeye', cursive;
+    font-size: 48px;
+   
+}
+
+#navColor{
+    
+    transition-property: background-color;
+    transition-duration: 3s;
+   
+}
+.fa-play:before {
+    color: black;
+}
+#rj-player .rjp-player-container .jp-play, #rj-player .rjp-player-container .jp-pause {
+    background: none;
+}
+
+#rj-player .rjp-player-container  {
+
+    background: none;
+}
+
+#rj-player .player-v3.player-medium{
+    background: none;
+}
+.marginLeft{
+    margin-left: 5%;
+}

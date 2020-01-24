@@ -1,20 +1,145 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script src="https://kit.fontawesome.com/f2c84d7abd.js" crossorigin="anonymous"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+<!-- RadioJar Css -->
+<link rel="stylesheet" href="https://www.radiojar.com/wrappers/api-plugins/v1/css/player.css">
 <!-- Style css -->
 <link rel="stylesheet" href="style.css">
 
+<!-- Font for time -->
+<link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Time Script -->
+<script src="scripts\time.js"></script>
+
+<script src="scripts\changeBackground.js"></script>
 
     <title>Lemoni Radio</title>
   </head>
   <body>
+
+    <nav  id="navColor" class=" navbar navbar-expand-lg navbar-light padding-right-nav ">
+      
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+        <ul class="navbar-nav  mr-auto  ">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">DONATE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+
+    <div class="container">
+      <img id="logo_image" src="lemoni_logo.jpg" alt="Lemoni Logo" class="">
+
+    </div>
+
+    <div id="social-media">
+      <i class="fab fa-facebook-f" style="font-size:36px"></i>
+      <i class="fab fa-instagram" style="font-size:36px"></i>
+      <i class="fab fa-twitter" style="font-size:36px"></i>
+    </div>
+
+    <a onclick="setbackground()" type="button">
+    <div class="container" >
+     
+    <div  id="time"  >
+      
+     
+    </div>
+  </a>
+  </div>
+  
+  <div class="container">
+  <div id="rj-player" >
+    <div class="player-v3 player-medium">
+     <div class="info">
+      <div class="rjp-trackinfo-container">
+        <h4 class="rjp-label">Now playing:</h4>
+       <p id="trackInfo" class="rjp-info">
+        
+       </p>
+      </div>
+      <div class="rjp-player-container">
+       <div id="rjp-radiojar-player"></div>
+       <div id="rj-player-controls" class="rj-player-controls">
+        <div class="jp-gui jp-interface">
+         <div class="jp-controls">
+          <a href="javascript:;" style="display:block" class="jp-play" title="Play">&nbsp;<i class="icon-play"></i></a>
+          <a href="javascript:;" style="display:none" class="jp-pause" title="Pause"><i class="icon-pause"></i></a>
+          <a href="javascript:;" style="display:block" class="jp-mute"  title="Mute"><i class="icon-volume-up"></i></a>
+          <a href="javascript:;" style="display:none" class="jp-unmute" title="Unmute"><i class="icon-volume-off"></i></a>
+          <div class="jp-volume-bar-wrapper">
+           <div class="jp-volume-bar">
+            <div class="jp-volume-bar-value"></div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="//get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+
+<!--   Old Player 
+    <div id="rj-player">
+      <div class="rjp-player-container">
+       <div id="rjp-radiojar-player"></div>
+       <div id="rj-player-controls" class="rj-player-controls">
+        <div class="jp-gui jp-interface">
+         <div class="jp-controls">
+          <a href="javascript:;" style="display:block" class="jp-play" title="Play">&nbsp;<i class="fas fa-play"></i></a>
+          <a href="javascript:;" style="display:none" class="jp-pause" title="Pause"><i class="fas fa-pause"></i></a>
+         </div>
+       </div>
+       <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="//get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+        </div>
+       </div>
+      </div>
+     </div> -->
+
+
+   
+          
+      <!-- <iframe src="https://www.radiojar.com/widget/radio/mw1xsf0dpnruv/player/?trackinfo&show_now" frameborder="0" width="320" height="360" scrolling="no"></iframe> -->
+    </div>
+<div class="container">
+    <div id="chat_lemoni" class="col-xs-6" class="marginLeft">
+      <iframe src="https://chat.radiojar.com/mw1xsf0dpnruv/" width="100%" height="400px" scrolling="no" frameborder="0"></iframe>
+    </div>
+  </div>
+  </div>
+  </div>
+
 
     
 
@@ -22,41 +147,133 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        //
-        // Description: Randomly change background color every 5 seconds
-        //
-        // NewcWare 1997
-        // Author: Scott Newcomer 3/1997
-        // Email: nuke@bright.net
-        //
-        function setbackground()
-        {
-        window.setTimeout( "setbackground()", 5000); // 5000 milliseconds delay
-        var index = Math.round(Math.random() * 9);
-        var ColorValue = "FFFFFF"; // default color - white (index = 0)
-        if(index == 1)
-        ColorValue = "FFCCCC"; //peach
-        if(index == 2)
-        ColorValue = "CCAFFF"; //violet
-        if(index == 3)
-        ColorValue = "A6BEFF"; //lt blue
-        if(index == 4)
-        ColorValue = "99FFFF"; //cyan
-        if(index == 5)
-         ColorValue = "D5CCBB"; //tan
-        if(index == 6)
-        ColorValue = "99FF99"; //lt green
-        if(index == 7)
-        ColorValue = "FFFF99"; //lt yellow
-        if(index == 8)
-        ColorValue = "FFCC99"; //lt orange
-        if(index == 9)
-        ColorValue = "CCCCCC"; //lt grey
-        document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
-        }
-        </script>
-        <body onload="setbackground();">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    
+        
+        
+        
+        
+       
+        <body onload="startTime();"> 
+
+          <!--  New Script-->
+          <script type="text/javascript" src="https://www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
+          <script>
+           rjq('#rjp-radiojar-player').radiojar('player', {
+            "streamName": "mw1xsf0dpnruv",
+            "enableUpdates": true,
+            "defaultImage": "https://www.radiojar.com/img/sample_images/Radio_Stations_Avatar_BLUE.png",
+            "autoplay":true
+           });
+           rjq('#rjp-radiojar-player').off('rj-track-load-event');
+           rjq('#rjp-radiojar-player').on('rj-track-load-event', function(event, data) {
+             updateInfo(data);
+             if (data.title != "" || data.artist != "") {
+               rjq('.rjp-trackinfo-container').show();
+               rjq('#trackInfo').html(data.artist + ' - "' + data.title + '"')
+             } else {
+               rjq('.rjp-trackinfo-container').hide();
+             }
+           });
+          
+           function updateInfo(data) {
+             if (data.thumb) {
+               rjq('#rj-cover').html('<a href="#"><img src="' + data.thumb + '" alt="" title="" /></a>')
+             } else {
+               rjq('#rj-cover').html('')
+             }
+           }
+          </script>
+
+
+<!--        old script lemoni       
+       API LEMONI SCRIPT 
+<script type="text/javascript" src="//www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
+
+<script>
+  rjq('#rjp-radiojar-player').radiojar('player', {
+    "streamName": "mw1xsf0dpnruv",
+    "autoplay":true
+   });
+ </script>
+
+-->
+
+<!--GRADIENT redOrange-->
+<script>
+  function gradientRedOrange() {
+      var x = "#be1e2d";
+      var y = "#ec7323";
+      var bgColor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
+   console.log(bgColor);
+      document.body.style.background = bgColor;
+      }
+      </script>
+
+      <!--Nav red redOrange-->
+<script>
+  function navColorRed(){
+  document.getElementById("navColor").style.backgroundColor = "#be1e2d";
+  }
+  
+  </script>
+
+<script>
+  function changeMoodOrange(){
+  
+    var mood1 = navColorRed() + gradientRedOrange();
+    return mood1;
+  }
+  
+  </script>
+
+<!--GRADIENT BlueMov-->
+<script>
+  function gradientBlueMov() {
+      var x = "#d47097";
+      var y = "#76cdd9";
+      var bgColor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
+   console.log(bgColor);
+      document.body.style.background = bgColor;
+      }
+  
+  
+  </script>
+  
+
+  <!--Nav Blue BlueMov-->
+  <script>
+  function navColorBlue(){
+  document.getElementById("navColor").style.backgroundColor = "#76cdd9";
+  }
+  
+  </script>
+
+<script>
+  function changeMoodBlue(){
+  
+    var mood1 = navColorBlue() + gradientBlueMov();
+    return mood1;
+  }
+  
+  </script>
+
+<script>
+  function goThroughColors(){
+
+    var 
+  }
+
+
+</script>
+
+
+<script>
+  function timedText() {
+    setTimeout(changeMoodOrange(), 2000);
+    setTimeout(changeMoodBlue(), 4000);
+ 
+  }
+  </script>
 </body>
 </html>
