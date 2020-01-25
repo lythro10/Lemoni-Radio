@@ -140,10 +140,11 @@
         </div>
         <div class="col-md-4">
 
-         
-    <div id="chat_lemoni" class="col-xs-6" class="marginLeft">
-      <iframe src="https://chat.radiojar.com/mw1xsf0dpnruv/" width="100%" height="400px" scrolling="no" frameborder="0"></iframe>
-    </div>
+         <div id="chatText">
+           <p>Για Πες ...</p>
+         </div>
+          <div id="rjp-chat">
+          </div>
   </div>
         </div>
       </div>
@@ -155,6 +156,24 @@
 
   </div>
   </div>
+
+  <div class="container">
+    <p id="textVideo">Λεμόνι Έβαλες;</p>
+    <div class="row">
+      
+      <div class="col-6 " id="videoBanner1"><video  width="60%" autoplay  controls >
+        <source src="https://ak6.picdn.net/shutterstock/videos/1033350776/preview/stock-footage-squeeze-juice-from-lemon-hand-squeezes-half-yellow-lemon-close-up-slow-motion-turquoise.webm" type="video/mp4">
+        
+        Your browser does not support the video tag.
+      </video></div>
+      
+      <div class="col-6 " id="videoBanner1"><video width="60%"  controls autoplay >
+        <source src="tree2.mp4" type="video/mp4">
+        
+        Your browser does not support the video tag.
+      </video></div>
+      
+    </div>
 
 
     
@@ -171,9 +190,21 @@
         
        
         <body onload="startTime();"> 
+          <!-- Chat Script -->
+<script type="text/javascript" src="https://www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
+<script>
+   rjq('#rjp-chat').radiojar('chatProvider', {
+       streamname: "mw1xsf0dpnruv",
+       width: 300,              // width of chat container in pixels (default is 700 pixels)
+       height:300,              // height of chat container in pixels (default is 900 pixels)
+       frameborder:false,       // show frameborder or not (default is false) 
+       scrolling:"auto",        // yes, no, auto (default is no)
+       cssfile:""               // your own custom css file url
+   });
+</script>
 
           
-
+          <!-- Player Script -->
 
           <script type="text/javascript" src="https://www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
           <script>
@@ -202,5 +233,8 @@
              }
            }
           </script>
+
+
+
 </body>
 </html>
