@@ -24,6 +24,31 @@
 <script src="scripts\time.js"></script>
 
 <script src="scripts\changeBackground.js"></script>
+<!-- radioJar script Player -->
+<script src="scripts\radioJar.js"></script>
+
+<!-- Red Orange Gradient -->
+<script src="scripts\gradientRedOrange.js"></script>
+
+<!-- Nav Red Orange -->
+<script src="scripts\navRedOrange.js"></script>
+
+
+<!--Change Mood Orange   -->
+
+<script src="scripts\changeMoodOrange.js"></script>
+
+<!-- Gradient Blue Mov  -->
+<script src="scripts\gradientBlueMov.js"></script>
+
+<!-- Nav Blue Mov -->
+<script src="scripts\navBlueMov.js"></script>
+
+<!-- Chnage Mood Blue -->
+<script src="scripts\changeMoodBlue.js"></script>
+
+<!-- timedText -->
+<script src="scripts\timedText.js"></script>
 
     <title>Lemoni Radio</title>
   </head>
@@ -42,7 +67,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#">CONTACT</a>
           </li>
-          
           
         </ul>
         
@@ -77,7 +101,6 @@
       <div class="rjp-trackinfo-container">
         <h4 class="rjp-label">Now playing:</h4>
        <p id="trackInfo" class="rjp-info">
-        
        </p>
       </div>
       <div class="rjp-player-container">
@@ -108,29 +131,10 @@
   </div>
 
 
-<!--   Old Player 
-    <div id="rj-player">
-      <div class="rjp-player-container">
-       <div id="rjp-radiojar-player"></div>
-       <div id="rj-player-controls" class="rj-player-controls">
-        <div class="jp-gui jp-interface">
-         <div class="jp-controls">
-          <a href="javascript:;" style="display:block" class="jp-play" title="Play">&nbsp;<i class="fas fa-play"></i></a>
-          <a href="javascript:;" style="display:none" class="jp-pause" title="Pause"><i class="fas fa-pause"></i></a>
-         </div>
-       </div>
-       <div class="jp-no-solution">
-        <span>Update Required</span>
-        To play the media you will need to either update your browser to a recent version or update your <a href="//get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-        </div>
-       </div>
-      </div>
-     </div> -->
-
 
    
           
-      <!-- <iframe src="https://www.radiojar.com/widget/radio/mw1xsf0dpnruv/player/?trackinfo&show_now" frameborder="0" width="320" height="360" scrolling="no"></iframe> -->
+     
     </div>
 <div class="container">
     <div id="chat_lemoni" class="col-xs-6" class="marginLeft">
@@ -156,124 +160,9 @@
        
         <body onload="startTime();"> 
 
-          <!--  New Script-->
-          <script type="text/javascript" src="https://www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
-          <script>
-           rjq('#rjp-radiojar-player').radiojar('player', {
-            "streamName": "mw1xsf0dpnruv",
-            "enableUpdates": true,
-            "defaultImage": "https://www.radiojar.com/img/sample_images/Radio_Stations_Avatar_BLUE.png",
-            "autoplay":true
-           });
-           rjq('#rjp-radiojar-player').off('rj-track-load-event');
-           rjq('#rjp-radiojar-player').on('rj-track-load-event', function(event, data) {
-             updateInfo(data);
-             if (data.title != "" || data.artist != "") {
-               rjq('.rjp-trackinfo-container').show();
-               rjq('#trackInfo').html(data.artist + ' - "' + data.title + '"')
-             } else {
-               rjq('.rjp-trackinfo-container').hide();
-             }
-           });
           
-           function updateInfo(data) {
-             if (data.thumb) {
-               rjq('#rj-cover').html('<a href="#"><img src="' + data.thumb + '" alt="" title="" /></a>')
-             } else {
-               rjq('#rj-cover').html('')
-             }
-           }
-          </script>
 
 
-<!--        old script lemoni       
-       API LEMONI SCRIPT 
-<script type="text/javascript" src="//www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
 
-<script>
-  rjq('#rjp-radiojar-player').radiojar('player', {
-    "streamName": "mw1xsf0dpnruv",
-    "autoplay":true
-   });
- </script>
-
--->
-
-<!--GRADIENT redOrange-->
-<script>
-  function gradientRedOrange() {
-      var x = "#be1e2d";
-      var y = "#ec7323";
-      var bgColor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
-   console.log(bgColor);
-      document.body.style.background = bgColor;
-      }
-      </script>
-
-      <!--Nav red redOrange-->
-<script>
-  function navColorRed(){
-  document.getElementById("navColor").style.backgroundColor = "#be1e2d";
-  }
-  
-  </script>
-
-<script>
-  function changeMoodOrange(){
-  
-    var mood1 = navColorRed() + gradientRedOrange();
-    return mood1;
-  }
-  
-  </script>
-
-<!--GRADIENT BlueMov-->
-<script>
-  function gradientBlueMov() {
-      var x = "#d47097";
-      var y = "#76cdd9";
-      var bgColor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
-   console.log(bgColor);
-      document.body.style.background = bgColor;
-      }
-  
-  
-  </script>
-  
-
-  <!--Nav Blue BlueMov-->
-  <script>
-  function navColorBlue(){
-  document.getElementById("navColor").style.backgroundColor = "#76cdd9";
-  }
-  
-  </script>
-
-<script>
-  function changeMoodBlue(){
-  
-    var mood1 = navColorBlue() + gradientBlueMov();
-    return mood1;
-  }
-  
-  </script>
-
-<script>
-  function goThroughColors(){
-
-    var 
-  }
-
-
-</script>
-
-
-<script>
-  function timedText() {
-    setTimeout(changeMoodOrange(), 2000);
-    setTimeout(changeMoodBlue(), 4000);
- 
-  }
-  </script>
 </body>
 </html>
