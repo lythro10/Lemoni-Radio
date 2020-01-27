@@ -78,6 +78,7 @@ body {
 #rjp-chat{
     margin-top: 10%;
     border:1px #9b6c61 solid;
+    margin-left: -7%;
 }
 #chatText{
     height: 0;
@@ -86,4 +87,8 @@ body {
 
 #textVideo{
     font-family: 'Ribeye', cursive;
+}
+
+*, ::after, ::before {
+    max-width: 100%;
 }
