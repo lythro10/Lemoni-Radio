@@ -102,3 +102,21 @@ body {
 .alert{
     font-size: 10px;
 }
+
+div.modal-content{
+    background: black;
+    color: white;
+    
+}
+
+#georgekimg{
+    width: 100px;
+    height: 100px;
+}
+.h1NoRem{
+    font-size: 1em;
+}
+
+button.close{
+    color: white;
+}
