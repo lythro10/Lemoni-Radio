@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-- RadioJar Css -->
 <link rel="stylesheet" href="https://www.radiojar.com/wrappers/api-plugins/v1/css/player.css">
-<!-- Style css -->
-<link rel="stylesheet" href="style.css">
+
 
 <!-- Font for time -->
 <link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap" rel="stylesheet">
@@ -50,6 +49,12 @@
 <!-- timedText -->
 <script src="scripts\timedText.js"></script>
 
+<!-- About Function popup -->
+<script src="scripts\aboutFunction.js"></script>
+
+<!-- Style css -->
+<link rel="stylesheet" href="style.css">
+
     <title>Lemoni Radio</title>
   </head>
   <body>
@@ -63,7 +68,7 @@
       <div class="collapse navbar-collapse  " id="navbarSupportedContent">
         <ul class="navbar-nav  mr-auto  ">
           <li class="nav-item ">
-            <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" >ABOUT <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">DONATE</a>
@@ -77,8 +82,8 @@
       </div>
     </nav>
 
-    <div class="container">
-      <img id="logo_image" src="lemoni_logo.jpg" alt="Lemoni Logo" class="">
+    <div class="container" id="logoContainer">
+      <img id="logo_image" src="lemonilogoTR4.png" alt="Lemoni Logo" class="">
 
     </div>
 
@@ -91,7 +96,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-6">
           
     <a onclick="setbackground()" type="button">
       <div class="container" >
@@ -142,13 +147,13 @@
   
   
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
 
-         <div id="chatText">
-           <p>Για Πες ...</p>
-         </div>
-          <div id="rjp-chat">
-          </div>
+          <p id="chatText">LIVE CHAT</p>
+          <div id="rjp-chat" >
+            
+          
+        </div>
   </div>
         </div>
       </div>
@@ -201,11 +206,11 @@
 <script>
    rjq('#rjp-chat').radiojar('chatProvider', {
        streamname: "mw1xsf0dpnruv",
-       width: 300,              // width of chat container in pixels (default is 700 pixels)
-       height:300,              // height of chat container in pixels (default is 900 pixels)
+       width: 600,              // width of chat container in pixels (default is 700 pixels)
+       height:350,              // height of chat container in pixels (default is 900 pixels)
        frameborder:false,       // show frameborder or not (default is false) 
        scrolling:"auto",        // yes, no, auto (default is no)
-       cssfile:""               // your own custom css file url
+       cssfile:"style.css"               // your own custom css file url
    });
 </script>
 

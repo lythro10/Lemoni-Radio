@@ -18,10 +18,10 @@ body {
     font-weight:900;
     font-size: large;
 }
-/* #logo_image{
-    margin-top: 5%;
-    margin-left: 5%;
-} */
+#logo_image{
+    width: 300px;
+    height: 100px;
+}
 #social-media{
     margin-left: 80% ;
 }
@@ -77,8 +77,8 @@ body {
 
 #rjp-chat{
     margin-top: 10%;
-    border:1px #9b6c61 solid;
     margin-left: -7%;
+    
 }
 #chatText{
     height: 0;
@@ -91,4 +91,13 @@ body {
 
 *, ::after, ::before {
     max-width: 100%;
+}
+
+
+#logoContainer{
+    margin-top: 7%;
+}
+
+.alert{
+    font-size: 10px;
 }
