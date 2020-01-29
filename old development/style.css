@@ -1,0 +1,103 @@
+/* body{
+    transition: background-color 1s ease
+} */
+
+body {
+    background: repeating-linear-gradient(90deg, #ffde22, #5eb546);
+    
+    
+  }
+.padding-right-nav{
+    background-color: #5eb546;;
+    padding-left: 70%;
+    padding-right: 20%;
+    border: 1px yellow solid;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:#fde146;
+    font-weight:900;
+    font-size: large;
+}
+#logo_image{
+    width: 300px;
+    height: 100px;
+}
+#social-media{
+    margin-left: 80% ;
+}
+
+#time{
+   
+    font-family: 'Ribeye', cursive;
+    font-size: 48px;
+   
+}
+
+#navColor{
+    
+    transition-property: background-color;
+    transition-duration: 3s;
+   
+}
+.fa-play:before {
+    color: black;
+}
+#rj-player .rjp-player-container .jp-play, #rj-player .rjp-player-container .jp-pause {
+    background: none;
+}
+
+#rj-player .rjp-player-container  {
+
+    background: none;
+}
+
+#rj-player .player-v3.player-medium{
+    background: none;
+}
+.marginLeft{
+    margin-left: 5%;
+}
+#rj-player .rjp-player-container .jp-volume-bar-wrapper {
+
+    bottom: 20px;
+}
+
+#rj-player .rjp-player-container .jp-mute, #rj-player .rjp-player-container .jp-unmute {
+    line-height: 1.5;
+    bottom: 20px;
+    background: #9b6c61;
+    width: 40px;
+}
+
+#rj-player .player-v3.player-medium .rjp-player-container{
+    position: relative;
+    margin-top: -2%;
+    margin-left: -5%;
+}
+
+#rjp-chat{
+    margin-top: 10%;
+    margin-left: -7%;
+    
+}
+#chatText{
+    height: 0;
+    font-family: 'Ribeye', cursive;
+}
+
+#textVideo{
+    font-family: 'Ribeye', cursive;
+}
+
+*, ::after, ::before {
+    max-width: 100%;
+}
+
+
+#logoContainer{
+    margin-top: 7%;
+}
+
+.alert{
+    font-size: 10px;
+}
