@@ -120,3 +120,14 @@ div.modal-content{
 button.close{
     color: white;
 }
+
+div.modal-content.container{
+    align-items: baseline;
+}
+
+
+.modal-content {
+    padding-left: 4%;
+    padding-right: 4%;
+
+}
