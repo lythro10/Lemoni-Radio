@@ -24,7 +24,7 @@ body {
     height: 100px;
 }
 #social-media{
-    margin-left: 80% ;
+    margin-left: 72% ;
 }
 
 #time{
@@ -84,6 +84,7 @@ body {
 #chatText{
     height: 0;
     font-family: 'Ribeye', cursive;
+    font-size: 2rem;
 }
 
 #textVideo{
@@ -130,4 +131,34 @@ div.modal-content.container{
     padding-left: 4%;
     padding-right: 4%;
 
+}
+
+.paddingLeft{
+    padding-left: 20px;
+}
+.paddingLogo{
+    padding-left: 10px;
+}
+
+div#facebook-login.alert.alert-info{
+    font-size: 10px;
+
+}
+
+.rjp-label{
+    color: black;
+}
+
+form{
+    width: 300px;
+    
+}
+
+input{
+    max-width: 100%;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 100px;
 }
