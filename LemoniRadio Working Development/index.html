@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114681263-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114681263-7');
+</script>
+
   <script src="https://kit.fontawesome.com/f2c84d7abd.js" crossorigin="anonymous"></script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -135,10 +145,10 @@
                   <p></p>
                   <h1>TALK TO US!</h1>
                   <form  class="contact-form" action="contactform.php" method="POST">
-                    <input type="text" name="name"  placeholder="First Name">
-                    <input type="email" name="email" placeholder="Write your email ...">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
-                    <button type="submit" name="submit">Submit</button>
+                    <input type="text" name="name"  placeholder="First Name" class="blockclass">
+                    <input type="email" name="email" placeholder="Write your email ..." class="blockclass">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message" class="blockclass"></textarea>
+                    <button type="submit" name="submit" class="blockclass">Submit</button>
                     
                   </form>
 
@@ -155,7 +165,7 @@
   </nav>
 
   <div class="container" id="logoContainer">
-    <img id="logo_image" class="paddingLogo" src="lemonilogoTR3.png" alt="Lemoni Logo" class="">
+    <img id="logo_image" class="paddingLogo" src="Lemoni-logo-green.png" alt="Lemoni Logo" class="">
 
   </div>
 
@@ -170,7 +180,7 @@
     <div class="row">
       <div class="col-md-6">
 
-        <h2 id="zoneText" class="paddingLeft"></h2>
+        <h2 id="zoneText" class="paddingLeft fontSemi"></h2>
 
         <a onclick="changeZone()" type="button">
 

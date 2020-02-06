@@ -1,0 +1,8 @@
+@font-face{
+    font-family: myFirstFont;
+    src: url(SF_Think-Mono.otf);
+}
+
+h2 {
+    font-family: myFirstFont;
+}

@@ -8,6 +8,18 @@ body {
     transition-property: background-color;
     transition-duration: 3s;
   }
+.fontSemi{
+    font-family: trim-semibold;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+  @font-face {
+    font-family: trim-semibold;
+    src: url(Trim-SemiBold.otf);
+  }
+  .nav-link{
+      font-family: trim-semibold;
+  }
 .padding-right-nav{
     /* background-color: #5eb546; */
     padding-left: 70%;
@@ -20,8 +32,8 @@ body {
     font-size: large;
 }
 #logo_image{
-    width: 300px;
-    height: 100px;
+    width: 219px;
+    height: 59.851px;
 }
 #social-media{
     margin-left: 72% ;
@@ -162,3 +174,26 @@ textarea{
     resize: vertical;
     max-height: 100px;
 }
+
+.modal-backdrop.show {
+    opacity: 0;
+}
+
+.blockclass {
+    display: block;
+}
+form.contact-form{
+    width: 100%;
+}
+input.blockclass{
+    width: inherit;
+    margin-top: 1%
+}
+textarea.blockclass{
+    width: inherit;
+    margin-top: 1%
+}
+button.blockclass{
+    margin-top: 1%
+}
+
