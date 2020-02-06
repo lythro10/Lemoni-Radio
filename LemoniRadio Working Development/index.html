@@ -2,15 +2,7 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114681263-7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-114681263-7');
-</script>
+ 
 
   <script src="https://kit.fontawesome.com/f2c84d7abd.js" crossorigin="anonymous"></script>
   <!-- Required meta tags -->
@@ -64,10 +56,22 @@
   <!-- About Function popup -->
   <script src="scripts\aboutFunction.js"></script>
 
+  <!-- Font load -->
+  <link rel="preload" href="Trim-SemiBold.otf" as="font" type="font/otf" crossorigin>
+
   <!-- Style css -->
   <link rel="stylesheet" href="style.css">
 
   <title>Lemoni Radio</title>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114681263-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114681263-7');
+</script>
 </head>
 
 <body>
@@ -180,7 +184,7 @@
     <div class="row">
       <div class="col-md-6">
 
-        <h2 id="zoneText" class="paddingLeft fontSemi"></h2>
+        <h2 id="zoneText" class="paddingLeft changeZoneClass"></h2>
 
         <a onclick="changeZone()" type="button">
 
