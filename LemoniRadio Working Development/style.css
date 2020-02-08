@@ -2,6 +2,20 @@
     transition: background-color 1s ease
 } */
 
+@font-face {
+    font-family: trim-semibold;
+    src: url(LemoniRadio Working Development\Trim-SemiBold.otf);
+  }
+
+  @font-face {
+    font-family: 'sfThinkMono';
+    src: url('LemoniRadio Working Development\SF_Think-Mono.otf');
+    src: local('☺'), 
+         url('LemoniRadio Working Development\SF_Think-Mono.otf') format('otf'), 
+         url('gestareg-webfont.ttf') format('truetype'), 
+         url('gestareg-webfont.svg#webfontg8dbVmxj') format('svg');
+  }
+
 body {
     /* background: repeating-linear-gradient(90deg, #ffde22, #5eb546); */
     
@@ -14,18 +28,10 @@ body {
     font-size: 17px;
     margin-top: 25px;
 }
-  @font-face {
-    font-family: trim-semibold;
-    src: url(Trim-SemiBold.otf);
-  }
-
-  @font-face{
-    font-family: sfThinkMono;
-    src: url(SF_Think-Mono.otf);
-}
+  
 
 
-  .nav-link{
+.nav-link{
       font-family: trim-semibold;
   }
 .padding-right-nav{
@@ -50,7 +56,7 @@ body {
 
 #time{
    
-    font-family: sfThinkMono;
+    font-family: 'Luckiest Guy', cursive;
     font-size: 23px;
    
 }
@@ -104,12 +110,12 @@ body {
 }
 #chatText{
     height: 0;
-    font-family: 'Ribeye', cursive;
+    font-family: trim-semibold;
     font-size: 1.5rem;
 }
 
 #textVideo{
-    font-family: 'Ribeye', cursive;
+    font-family: trim-semibold;
 }
 
 *, ::after, ::before {
