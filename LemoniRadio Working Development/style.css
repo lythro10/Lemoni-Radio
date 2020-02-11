@@ -10,15 +10,15 @@
   @font-face {
     font-family: 'sfThinkMono';
     src: url('LemoniRadio Working Development\SF_Think-Mono.otf');
-    src: local('☺'), 
-         url('LemoniRadio Working Development\SF_Think-Mono.otf') format('otf'), 
-         url('gestareg-webfont.ttf') format('truetype'), 
+    src: local('☺'),
+         url('LemoniRadio Working Development\SF_Think-Mono.otf') format('otf'),
+         url('gestareg-webfont.ttf') format('truetype'),
          url('gestareg-webfont.svg#webfontg8dbVmxj') format('svg');
   }
 
 body {
     /* background: repeating-linear-gradient(90deg, #ffde22, #5eb546); */
-    
+
     transition-property: background-color;
     transition-duration: 3s;
   }
@@ -28,7 +28,7 @@ body {
     font-size: 17px;
     margin-top: 25px;
 }
-  
+
 
 
 .nav-link{
@@ -55,17 +55,17 @@ body {
 }
 
 #time{
-   
+
     font-family: 'Luckiest Guy', cursive;
     font-size: 23px;
-   
+
 }
 
 #navColor{
-    
+
     transition-property: background-color;
     transition-duration: 3s;
-   
+
 }
 .fa-play:before {
     color: black;
@@ -106,7 +106,7 @@ body {
 #rjp-chat{
     margin-top: 10%;
     margin-left: -7%;
-    
+
 }
 #chatText{
     height: 0;
@@ -134,7 +134,7 @@ body {
 div.modal-content{
     background: black;
     color: white;
-    
+
 }
 
 #georgekimg{
@@ -161,10 +161,10 @@ div.modal-content.container{
 }
 
 .paddingLeft{
-    padding-left: 20px;
+    padding-left: 32px;
 }
 .paddingLogo{
-    padding-left: 10px;
+    padding-left: 32px;
 }
 
 div#facebook-login.alert.alert-info{
@@ -178,7 +178,7 @@ div#facebook-login.alert.alert-info{
 
 form{
     width: 300px;
-    
+
 }
 
 input{
@@ -212,3 +212,11 @@ button.blockclass{
     margin-top: 1%
 }
 
+.rjp-trackinfo-container{
+  margin-left: 5px
+}
+
+
+img.chat_image{
+  visibility: hidden;
+}
