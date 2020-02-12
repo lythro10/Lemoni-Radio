@@ -24,11 +24,11 @@ body {
     height: 100px;
 }
 #social-media{
-    margin-left: 80% ;
+    margin-left: 72% ;
 }
 
 #time{
-   
+    padding: 10px 20px;
     font-family: 'Ribeye', cursive;
     font-size: 48px;
    
@@ -84,6 +84,7 @@ body {
 #chatText{
     height: 0;
     font-family: 'Ribeye', cursive;
+    font-size: 2rem;
 }
 
 #textVideo{
@@ -101,4 +102,85 @@ body {
 
 .alert{
     font-size: 10px;
+}
+
+div.modal-content{
+    background: black;
+    color: white;
+    
+}
+
+#georgekimg{
+    width: 100px;
+    height: 100px;
+}
+.h1NoRem{
+    font-size: 1em;
+}
+
+button.close{
+    color: white;
+}
+
+div.modal-content.container{
+    align-items: baseline;
+}
+
+
+.modal-content {
+    padding-left: 4%;
+    padding-right: 4%;
+
+}
+
+.paddingLeft{
+    padding-left: 20px;
+}
+.paddingLogo{
+    padding-left: 10px;
+}
+
+div#facebook-login.alert.alert-info{
+    font-size: 10px;
+
+}
+
+.rjp-label{
+    color: black;
+}
+
+form{
+    width: 300px;
+    
+}
+
+input{
+    max-width: 100%;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 100px;
+}
+
+.modal-backdrop.show {
+    opacity: 0;
+}
+
+.blockclass {
+    display: block;
+}
+form.contact-form{
+    width: 100%;
+}
+input.blockclass{
+    width: inherit;
+    margin-top: 1%
+}
+textarea.blockclass{
+    width: inherit;
+    margin-top: 1%
+}
+button.blockclass{
+    margin-top: 1%
 }
