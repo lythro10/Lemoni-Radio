@@ -168,30 +168,22 @@
     </div>
 
   </nav>
-<div id="content">
-
 
   <div class="container" id="logoContainer">
-    <img id="logo_image" class="paddingLogo" src="lemonilogoTR3.png" alt="Lemoni Logo" class="">
+    <img id="logo_image" src="Lemoni-logo-green.png" alt="Lemoni Logo" class="">
 
   </div>
-
-  <!-- <div id="social-media">
-    <i class="fab fa-facebook-f" style="font-size:36px"></i>
-    <i class="fab fa-instagram" style="font-size:36px"></i>
-    <i class="fab fa-twitter" style="font-size:36px"></i>
-  </div>
- -->
 
   <div class="container">
     <div class="row">
       <div class="col-md-6">
 
-        <h2 id="zoneText" class="paddingLeft"></h2>
+        <a id="timeBox" onclick="changeZone()" type="button">
 
-        <a onclick="changeZone()" type="button">
+          
+          <h2 id="zoneText" class="changeZoneClass"></h2>
 
-          <div id="time" class="paddingLeft">
+          <div id="time">
 
 
           </div>
@@ -245,7 +237,7 @@
 
       <div class="col-md-5">
 
-        <p id="chatText">MURMUR BOX</p>
+        <p id="chatText" >LIVE CHAT</p>
         <div id="rjp-chat">
 
 
@@ -315,8 +307,8 @@
       <script>
         rjq('#rjp-chat').radiojar('chatProvider', {
           streamname: "mw1xsf0dpnruv",
-          width: 480,              // width of chat container in pixels (default is 700 pixels)
-          height: 240,              // height of chat container in pixels (default is 900 pixels)
+          width: 600,              // width of chat container in pixels (default is 700 pixels)
+          height: 350,              // height of chat container in pixels (default is 900 pixels)
           frameborder: false,       // show frameborder or not (default is false)
           scrolling: "auto",        // yes, no, auto (default is no)
           cssfile: "LemoniRadio\Working\Development/style.css"               // your own custom css file url
@@ -355,7 +347,7 @@
       </script>
 
 
-</div>
+
     </body>
 
 </html>

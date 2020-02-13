@@ -2,20 +2,6 @@
     transition: background-color 1s ease
 } */
 
-@font-face {
-    font-family: trim-semibold;
-    src: url(LemoniRadio Working Development\Trim-SemiBold.otf);
-  }
-
-  @font-face {
-    font-family: 'sfThinkMono';
-    src: url('LemoniRadio Working Development\SF_Think-Mono.otf');
-    src: local('☺'),
-         url('LemoniRadio Working Development\SF_Think-Mono.otf') format('otf'),
-         url('gestareg-webfont.ttf') format('truetype'),
-         url('gestareg-webfont.svg#webfontg8dbVmxj') format('svg');
-  }
-
 body {
     /* background: repeating-linear-gradient(90deg, #ffde22, #5eb546); */
 
@@ -26,12 +12,19 @@ body {
     font-family: trim-semibold;
     text-transform: uppercase;
     font-size: 17px;
-    margin-top: 25px;
+}
+  @font-face {
+    font-family: trim-semibold;
+    src: url(Trim-SemiBold.otf);
+  }
+
+  @font-face{
+    font-family: sfThinkMono;
+    src: url(SF_Think-Mono.otf);
 }
 
 
-
-.nav-link{
+  .nav-link{
       font-family: trim-semibold;
   }
 .padding-right-nav{
@@ -45,11 +38,9 @@ body {
     font-weight:900;
     font-size: large;
 }
-#content{
-    background-color: transparent;
-    background-image: linear-gradient(0deg, transparent 24%, rgba(212, 112, 151, 1) 25%, rgba(212, 112, 151, 1) 26%, transparent 27%, transparent 74%,  75%, rgba(255, 255, 255, 0) 75%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(212, 112, 151, 1) 25%, rgba(212, 112, 151, 1) 26%, transparent 27%, transparent 74%,   76%, transparent 77%, transparent);
-
-  background-size:80px 80px;
+#logo_image{
+    width: 219px;
+    height: 59.851px;
 }
 #social-media{
     margin-left: 72% ;
@@ -57,8 +48,8 @@ body {
 
 #time{
 
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 23px;
+    font-family: sfThinkMono;
+    font-size: 48px;
 
 }
 
@@ -111,12 +102,12 @@ body {
 }
 #chatText{
     height: 0;
-    font-family: trim-semibold;
-    font-size: 1.5rem;
+    font-family: 'Ribeye', cursive;
+    font-size: 2rem;
 }
 
 #textVideo{
-    font-family: trim-semibold;
+    font-family: 'Ribeye', cursive;
 }
 
 *, ::after, ::before {
@@ -162,10 +153,10 @@ div.modal-content.container{
 }
 
 .paddingLeft{
-    padding-left: 32px;
+    padding-left: 20px;
 }
 .paddingLogo{
-    padding-left: 32px;
+    padding-left: 10px;
 }
 
 div#facebook-login.alert.alert-info{
@@ -213,11 +204,29 @@ button.blockclass{
     margin-top: 1%
 }
 
-.rjp-trackinfo-container{
-  margin-left: 5px
-}
 
 
-img.chat_image{
-  visibility: hidden;
-}
+html {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+      background-color: #434343;
+      background-image:linear-gradient(#434343, #282828);
+  }
+  #content{
+      background-color: transparent;
+      background-image: linear-gradient(0deg, transparent 24%, rgba(212, 112, 151, 1) 25%, rgba(212, 112, 151, 1) 26%, transparent 27%, transparent 74%,  75%, rgba(255, 255, 255, 0) 75%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(212, 112, 151, 1) 25%, rgba(212, 112, 151, 1) 26%, transparent 27%, transparent 74%,   76%, transparent 77%, transparent);
+    height:100%;
+    background-size:50px 50px;
+  }
+
+  .follow-me {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
