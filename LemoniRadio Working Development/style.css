@@ -2,6 +2,8 @@
     transition: background-color 1s ease
 } */
 
+
+
 @font-face {
     font-family: trim-semibold;
     src: url(LemoniRadio Working Development\Trim-SemiBold.otf);
@@ -21,6 +23,7 @@ body {
 
     transition-property: background-color;
     transition-duration: 3s;
+
   }
 .changeZoneClass{
     font-family: trim-semibold;
