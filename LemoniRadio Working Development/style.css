@@ -224,3 +224,8 @@ button.blockclass{
 img.chat_image{
   visibility: hidden;
 }
+
+.lemoniTestModeP{
+  text-align: center;
+  font-size: 3rem;
+}
