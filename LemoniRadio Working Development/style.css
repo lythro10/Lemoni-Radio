@@ -43,8 +43,9 @@ font-family: time-lemoni;
   }
 .padding-right-nav{
     /* background-color: #5eb546; */
-    padding-left: 70%;
-    padding-right: 20%;
+    padding-left: 50%;
+    
+    /* padding-right: 20%; */
     border: 1px yellow solid;
 }
 .navbar-light .navbar-nav .nav-link{
@@ -52,6 +53,12 @@ font-family: time-lemoni;
     font-weight:900;
     font-size: 18px
 }
+.navbar {
+    min-height: 62.57px;
+    width: 100%;
+  }
+  
+  
 #content{
     background-color: transparent;
     background-image: linear-gradient(0deg, transparent 24%, rgba(212, 112, 151, 1) 25%, rgba(212, 112, 151, 1) 26%, transparent 27%, transparent 74%,  75%, rgba(255, 255, 255, 0) 75%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(212, 112, 151, 1) 25%, rgba(212, 112, 151, 1) 26%, transparent 27%, transparent 74%,   76%, transparent 77%, transparent);
@@ -248,3 +255,9 @@ img.chat_image{
 color: black;
 }
 
+a, a:hover{
+    color: inherit;
+}
+.fa, .fab, .fad, .fal, .far, .fas{
+    line-height: 1.8;
+}
