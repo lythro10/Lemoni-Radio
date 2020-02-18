@@ -2,22 +2,18 @@
     transition: background-color 1s ease
 } */
 
-
+@font-face{
+font-family: time-lemoni;
+src: url(SF_Think-Mono.otf);
+}
 
 @font-face {
     font-family: trim-semibold;
-    src: url(LemoniRadio Working Development\Trim-SemiBold.otf);
-  }
+    src: url(Trim-SemiBold.otf);
+}
 
-  @font-face {
-    font-family: 'sfThinkMono';
-    src: url('LemoniRadio Working Development\SF_Think-Mono.otf');
-    src: local('☺'),
-         url('LemoniRadio Working Development\SF_Think-Mono.otf') format('otf'),
-         url('gestareg-webfont.ttf') format('truetype'),
-         url('gestareg-webfont.svg#webfontg8dbVmxj') format('svg');
-  }
 
+   
 body {
     /* background: repeating-linear-gradient(90deg, #ffde22, #5eb546); */
 
@@ -25,6 +21,12 @@ body {
     transition-duration: 3s;
 
   }
+.fontTrim{
+    font-family: trim-semibold;
+}
+.fontTime{
+font-family: time-lemoni;
+}
 .changeZoneClass{
     font-family: trim-semibold;
     text-transform: uppercase;
@@ -36,6 +38,8 @@ body {
 
 .nav-link{
       font-family: trim-semibold;
+      margin-right: 63px;
+     font-size: 18px;
   }
 .padding-right-nav{
     /* background-color: #5eb546; */
@@ -46,7 +50,7 @@ body {
 .navbar-light .navbar-nav .nav-link{
     color:#fde146;
     font-weight:900;
-    font-size: large;
+    font-size: 18px
 }
 #content{
     background-color: transparent;
@@ -60,10 +64,11 @@ body {
 
 #time{
 
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 23px;
+    font-family: time-lemoni;
+    font-size: 17px;
 
 }
+
 
 #navColor{
 
@@ -164,8 +169,8 @@ div.modal-content.container{
 
 }
 
-.paddingLeft{
-    padding-left: 32px;
+.marginLeft{
+    margin-left: 32px;
 }
 .paddingLogo{
     padding-left: 32px;
@@ -227,5 +232,19 @@ img.chat_image{
 
 .lemoniTestModeP{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
+
+.rjp-label, .rjp-info{
+    font-family: trim-semibold;
+    font-size: 17px;
+    font-weight:900;
+   
+}
+#rj-player .rjp-label{
+    font-size: 17px;
+}
+#rj-player .player-v3 .rjp-label{
+color: black;
+}
+
