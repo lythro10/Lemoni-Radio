@@ -38,7 +38,8 @@ font-family: time-lemoni;
 
 .nav-link{
       font-family: trim-semibold;
-      margin-right: 63px;
+      /* Margin right had already 9 px with padding etc =63-9 =54px */
+      margin-right: 54px; 
      font-size: 18px;
   }
 .padding-right-nav{
@@ -73,6 +74,7 @@ font-family: time-lemoni;
 
     font-family: time-lemoni;
     font-size: 17px;
+    
 
 }
 
@@ -109,7 +111,7 @@ font-family: time-lemoni;
 #rj-player .rjp-player-container .jp-mute, #rj-player .rjp-player-container .jp-unmute {
     line-height: 1.5;
     bottom: 20px;
-    background: #9b6c61;
+    background: transparent;
     width: 40px;
 }
 
@@ -260,4 +262,11 @@ a, a:hover{
 }
 .fa, .fab, .fad, .fal, .far, .fas{
     line-height: 1.8;
+}
+
+.fa-facebook-f::before, .fa-facebook::before {
+    content: "\f39e";
+}
+#rj-player .rjp-player-container .jp-volume-bar-wrapper{
+    background: transparent;
 }

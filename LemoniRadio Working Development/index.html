@@ -64,6 +64,10 @@
   <link rel="stylesheet" href="style.css">
 
   <title>Lemoni Radio</title>
+
+  <meta name="description" content="Lemoni Radio - TEST MODE Lemonade not ready yet still makes sense!! ">
+<!-- Social Media Share -->
+  <meta name="og:title" property="og:title" content="Your Lemoni Radio">
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114681263-7"></script>
 <script>
@@ -191,14 +195,19 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-
-        <h2 id="zoneText" class="marginLeft"></h2>
+<!-- Old for time and zone padding -->
+        <!-- <h2 id="zoneText" class="marginLeft"></h2>
 
         <a onclick="changeZone()" type="button">
 
-          <div id="time" class="marginLeft">
+          <div id="time" class="marginLeft"> -->
 
+            <a id="timeBox" onclick="changeZone()" type="button">
 
+          
+              <h2 id="zoneText" class="changeZoneClass"></h2>
+    
+              <div id="time">
           </div>
         </a>
 
@@ -209,7 +218,7 @@
             <div class="player-v3 player-medium">
               <div class="info">
                 <div class="rjp-trackinfo-container">
-                  <h4 class="rjp-label ">Now playing:</h4>
+                  <h4 class="rjp-label">Now playing:</h4>
                   <p id="trackInfo" class="rjp-info">
                   </p>
                 </div>
