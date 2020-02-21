@@ -14,15 +14,6 @@ function changeZone() {
             var logo = "LOGO-energetic-zone.png";
             break;
         case 2:
-            var zoneText = "Mellow Zone";
-            var x = "#76cdd9";
-            var y = "#d47097";
-            var textColor1 = "#d47097";
-            var textColor2 = "#76cdd9";
-            var navBackgroundColor = "#76cdd9";
-            var logo = "LOGO-Mellow-zone.png";
-            break;
-        case 3:
             var zoneText = "Twilight Zone";
             var x = "#be1e2d";
             var y = "#ec7323";
@@ -30,6 +21,15 @@ function changeZone() {
             var textColor2 = "#be1e2d";
             var navBackgroundColor = "#be1e2d";
             var logo = "LOGO-Twilight-zone.png";
+            break;
+        case 3:
+            var zoneText = "Mellow Zone";
+            var x = "#76cdd9";
+            var y = "#d47097";
+            var textColor1 = "#d47097";
+            var textColor2 = "#76cdd9";
+            var navBackgroundColor = "#76cdd9";
+            var logo = "LOGO-Mellow-zone.png";
             break;
         case 4:
             var zoneText = "Deep Zone";
@@ -73,18 +73,8 @@ if (6 <= hour && hour < 12) {
     var navBackgroundColor = "#5eb546";
     var logo = "LOGO-energetic-zone.png";
 }
-// 12pm - 6pm Mellow Zone
+// 12pm - 6pm Mellow Zone Switched to Twilight 
 if (12 <= hour && hour < 18) {
-    var zoneText = "Mellow Zone";
-    var x = "#76cdd9";
-    var y = "#d47097";
-    var textColor1 = "#d47097";
-    var textColor2 = "#76cdd9";
-    var navBackgroundColor = "#76cdd9";
-    var logo = "LOGO-Mellow-zone.png";
-}
-// 6pm - 12am Twilight Zone
-if (18 <= hour && hour <= 23) {
     var zoneText = "Twilight Zone";
     var x = "#be1e2d";
     var y = "#ec7323";
@@ -92,6 +82,16 @@ if (18 <= hour && hour <= 23) {
     var textColor2 = "#be1e2d";
     var navBackgroundColor = "#be1e2d";
     var logo = "LOGO-Twilight-zone.png";
+}
+// 6pm - 12am Twilight Zone Changed to Mellow Zone
+if (18 <= hour && hour <= 23) {
+    var zoneText = "Mellow Zone";
+    var x = "#76cdd9";
+    var y = "#d47097";
+    var textColor1 = "#d47097";
+    var textColor2 = "#76cdd9";
+    var navBackgroundColor = "#76cdd9";
+    var logo = "LOGO-Mellow-zone.png"; 
 }
 // 12am - 6am Deep Zone
 if (0 <= hour && hour < 6) {
