@@ -62,10 +62,91 @@ font-family: time-lemoni;
   
 #content{
     background-color: transparent;
-    background-image: linear-gradient(0deg, transparent 24%, rgba(212, 112, 151, 1) 25%, rgba(212, 112, 151, 1) 26%, transparent 27%, transparent 74%,  75%, rgba(255, 255, 255, 0) 75%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(212, 112, 151, 1) 25%, rgba(212, 112, 151, 1) 26%, transparent 27%, transparent 74%,   76%, transparent 77%, transparent);
-
-  background-size:80px 80px;
+    background-size:80px 80px;
 }
+
+#content.energetic {
+    background-image: linear-gradient(0deg, transparent 24%, 
+                    rgba(253,225,70, 1) 25%, 
+                    rgba(253,225,70, 1) 26%, 
+                    transparent 27%, 
+                    transparent 74%, 
+                    75%, 
+                    rgba(255, 255, 255, 0) 75%, 
+                    transparent 77%, transparent), 
+                    
+                    linear-gradient(90deg, transparent 24%, 
+                    rgba(253,225,70, 1) 25%, 
+                    rgba(253,225,70, 1) 26%, 
+                    transparent 27%, 
+                    transparent 74%, 
+                    76%, 
+                    transparent 77%, 
+                    transparent);
+}
+
+#content.twilight {
+    background-image: linear-gradient(0deg, transparent 24%, 
+                    rgba(236,115,35, 1) 25%, 
+                    rgba(236,115,35, 1) 26%, 
+                    transparent 27%, 
+                    transparent 74%, 
+                    75%, 
+                    rgba(255, 255, 255, 0) 75%, 
+                    transparent 77%, transparent), 
+                    
+                    linear-gradient(90deg, transparent 24%, 
+                    rgba(236,115,35, 1) 25%, 
+                    rgba(236,115,35, 1) 26%, 
+                    transparent 27%, 
+                    transparent 74%, 
+                    76%, 
+                    transparent 77%, 
+                    transparent);
+}
+
+#content.mellow {
+    background-image: linear-gradient(0deg, transparent 24%, 
+                    rgba(212, 112, 151, 1) 25%, 
+                    rgba(212, 112, 151, 1) 26%, 
+                    transparent 27%, 
+                    transparent 74%, 
+                    75%, 
+                    rgba(255, 255, 255, 0) 75%, 
+                    transparent 77%, transparent), 
+                    
+                    linear-gradient(90deg, transparent 24%, 
+                    rgba(212, 112, 151, 1) 25%, 
+                    rgba(212, 112, 151, 1) 26%, 
+                    transparent 27%, 
+                    transparent 74%, 
+                    76%, 
+                    transparent 77%, 
+                    transparent);
+}
+
+#content.deep {
+    background-image: linear-gradient(0deg, transparent 24%, 
+                    rgba(127,64,152, 1) 25%, 
+                    rgba(127,64,152, 1) 26%, 
+                    transparent 27%, 
+                    transparent 74%, 
+                    75%, 
+                    rgba(255, 255, 255, 0) 75%, 
+                    transparent 77%, transparent), 
+                    
+                    linear-gradient(90deg, transparent 24%, 
+                    rgba(127,64,152, 1) 25%, 
+                    rgba(127,64,152, 1) 26%, 
+                    transparent 27%, 
+                    transparent 74%, 
+                    76%, 
+                    transparent 77%, 
+                    transparent);
+}
+
+
+
 #social-media{
     margin-left: 72% ;
 }
