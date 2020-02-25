@@ -137,18 +137,18 @@
         <li class="nav-item">
           <a class="nav-link" href="#">DONATE</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" >
           <button type="button" class="btn  nav-link" data-toggle="modal"
             data-target=".bd-contact-modal-lg">CONTACT</button>
 
-          <div class="modal fade bd-contact-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+          <div id="contactusmodallink" class="modal fade bd-contact-modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-lg" >
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
 
-                <div class="modal-content container">
+                <div class="modal-content container" >
                   <h1>CONTACT LEMONI RADIO</h1>
                   <P>hello@lemoniradio.com</P>
                   <p></p>
@@ -177,10 +177,10 @@
 
 
   <div class="container" id="logoContainer">
-    <div class="lemoniTestModeP">
+    <!-- <div class="lemoniTestModeP">
       <strong> <p>TEST MODE Lemonade not ready yet still makes sense!</p>
 </strong>
-    </div>
+    </div> -->
     <img id="logo_image" class="paddingLogo" src="lemonilogoTR3.png" alt="Lemoni Logo" class="">
 
   </div>
@@ -286,8 +286,9 @@
   <div class="container">
 
     <div class="row">
-
-      <div class="col-6 " id="videoBanner1">
+      
+      <div class="col-6 " id="videoBanner1" >
+        <a href="#contactusmodallink"  data-toggle="modal"> 
         <!-- <video width="560" height="400" autoplay muted controls>
           <source src="tree2.mp4" type="video/mp4">
 
@@ -296,11 +297,12 @@
 
         <img src="main-sponsor-banner.png" alt="">
 
-
-
+      </a>
+      
       </div>
 
         <div class="col-6 " id="videoBanner1">
+          <a href="#contactusmodallink" data-toggle="modal">
           <!-- <video width="560" height="400" autoplay muted controls>
             <source src="tree2.mp4" type="video/mp4">
 
@@ -308,7 +310,7 @@
           </video> -->
 
           <img src="main-sponsor-banner.png" id="sponsor_img_zone">
-        
+        </a>
         
         </div>
 
