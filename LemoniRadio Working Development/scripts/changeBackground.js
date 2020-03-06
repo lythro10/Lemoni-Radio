@@ -29,6 +29,7 @@ function changeZone() {
             var textColor2 = "#fde146";
             var navBackgroundColor = "#5eb546";
             var logo = "LOGO-energetic-zone.png";
+            var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
             var sponsor_img = sponsor_imgs[0];
             break;
         case 2:
@@ -40,6 +41,7 @@ function changeZone() {
             var textColor2 = "#76cdd9";
             var navBackgroundColor = "#76cdd9";
             var logo = "LOGO-Mellow-zone.png";
+            var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
             var sponsor_img = sponsor_imgs[1];
             break;
         case 3:
@@ -51,6 +53,7 @@ function changeZone() {
             var textColor2 = "#be1e2d";
             var navBackgroundColor = "#be1e2d";
             var logo = "LOGO-Twilight-zone.png";
+            var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
             var sponsor_img = sponsor_imgs[2];           
             break;
         case 4:
@@ -78,6 +81,10 @@ function changeZone() {
     var bgColor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
     document.body.style.background = bgColor;
 
+    var playercolor = "repeating-linear-gradient(" + "0deg" + "," + x + "," + y + ")";
+    document.getElementById("playerBox").style.background = playercolor;
+
+
     z++;
 
     if (z > 4) { z = 1; }
@@ -99,6 +106,7 @@ if (6 <= hour && hour < 12) {
     var textColor2 = "#fde146";
     var navBackgroundColor = "#5eb546";
     var logo = "LOGO-energetic-zone.png";
+    var playercolor = "#5eb546"
     var sponsor_img = sponsor_imgs[0];
 }
 // 12pm - 6pm Mellow Zone  
@@ -111,7 +119,9 @@ if (12 <= hour && hour < 18) {
     var textColor2 = "#76cdd9";
     var navBackgroundColor = "#76cdd9";
     var logo = "LOGO-Mellow-zone.png";
+    var playercolor = "#d47097"
     var sponsor_img = sponsor_imgs[1];
+    // playercolor = rjp-trackinfo-container
     //old
     // var zoneClass = "twilight";
     // var zoneText = "Twilight Zone";
@@ -133,6 +143,7 @@ if (18 <= hour && hour <= 23) {
     var textColor2 = "#be1e2d";
     var navBackgroundColor = "#be1e2d";
     var logo = "LOGO-Twilight-zone.png";
+    var playercolor = "#ec7323"
     var sponsor_img = sponsor_imgs[2];
 // old
     // var zoneClass = "mellow";
@@ -155,6 +166,7 @@ if (0 <= hour && hour < 6) {
     var textColor2 = "#7f4098";
     var navBackgroundColor = "#7f4098";
     var logo = "LOGO-deep-zone.png";
+    var playercolor = "#0e2539"
     var sponsor_img = sponsor_imgs[3];
 }
 // Old Times if need to go back
@@ -214,10 +226,14 @@ document.getElementById("timeBox").style.backgroundColor = navBackgroundColor;
 document.getElementById("timeBox").style.color = textColor1;
 document.getElementById("social-media").style.color = textColor2;
 document.getElementById("logo_image").src = logo;
+document.getElementById("playerBox").style.backgroundColor = playercolor;
 document.getElementById("sponsor_img_zone").src = sponsor_img;
 
 var bgColor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
 document.body.style.background = bgColor;
+
+var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
+document.getElementById("playerBox").style.background = playercolor;
 
 
 /* window.setTimeout( "setbackground()", 30000); // 600000 milliseconds delay is 10 min

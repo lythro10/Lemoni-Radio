@@ -351,3 +351,11 @@ a, a:hover{
 #rj-player .rjp-player-container .jp-volume-bar-wrapper{
     background: transparent;
 }
+
+a#timeBox{
+    margin-left: 20px;
+}
+
+a.jp-mute{
+    font-size: 25px;
+}
