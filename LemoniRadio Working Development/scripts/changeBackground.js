@@ -28,7 +28,7 @@ function changeZone() {
             var textColor1 = "#fde146";
             var textColor2 = "#fde146";
             var navBackgroundColor = "#5eb546";
-            var logo = "LOGO-energetic-zone.png";
+            var logo = "LOGO-energetic-zone.svg";
             var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
             var sponsor_img = sponsor_imgs[0];
             break;
@@ -40,7 +40,7 @@ function changeZone() {
             var textColor1 = "#d47097";
             var textColor2 = "#76cdd9";
             var navBackgroundColor = "#76cdd9";
-            var logo = "LOGO-Mellow-zone.png";
+            var logo = "LOGO-Mellow-zone.svg";
             var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
             var sponsor_img = sponsor_imgs[1];
             break;
@@ -52,7 +52,7 @@ function changeZone() {
             var textColor1 = "#ec7323";
             var textColor2 = "#be1e2d";
             var navBackgroundColor = "#be1e2d";
-            var logo = "LOGO-Twilight-zone.png";
+            var logo = "LOGO-Twilight-zone.svg";
             var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
             var sponsor_img = sponsor_imgs[2];           
             break;
@@ -64,7 +64,7 @@ function changeZone() {
             var textColor1 = "#0e2539";
             var textColor2 = "#7f4098";
             var navBackgroundColor = "#7f4098";
-            var logo = "LOGO-deep-zone.png";
+            var logo = "LOGO-deep-zone.svg";
             var sponsor_img = sponsor_imgs[3];
             break;
     }
@@ -105,7 +105,7 @@ if (6 <= hour && hour < 12) {
     var textColor1 = "#fde146";
     var textColor2 = "#fde146";
     var navBackgroundColor = "#5eb546";
-    var logo = "LOGO-energetic-zone.png";
+    var logo = "LOGO-energetic-zone.svg";
     var playercolor = "#5eb546"
     var sponsor_img = sponsor_imgs[0];
 }
@@ -118,7 +118,7 @@ if (12 <= hour && hour < 18) {
     var textColor1 = "#d47097";
     var textColor2 = "#76cdd9";
     var navBackgroundColor = "#76cdd9";
-    var logo = "LOGO-Mellow-zone.png";
+    var logo = "LOGO-Mellow-zone.svg";
     var playercolor = "#d47097"
     var sponsor_img = sponsor_imgs[1];
     // playercolor = rjp-trackinfo-container
@@ -142,7 +142,7 @@ if (18 <= hour && hour <= 23) {
     var textColor1 = "#ec7323";
     var textColor2 = "#be1e2d";
     var navBackgroundColor = "#be1e2d";
-    var logo = "LOGO-Twilight-zone.png";
+    var logo = "LOGO-Twilight-zone.svg";
     var playercolor = "#ec7323"
     var sponsor_img = sponsor_imgs[2];
 // old
@@ -165,7 +165,7 @@ if (0 <= hour && hour < 6) {
     var textColor1 = "#0e2539";
     var textColor2 = "#7f4098";
     var navBackgroundColor = "#7f4098";
-    var logo = "LOGO-deep-zone.png";
+    var logo = "LOGO-deep-zone.svg";
     var playercolor = "#0e2539"
     var sponsor_img = sponsor_imgs[3];
 }
