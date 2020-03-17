@@ -353,8 +353,9 @@ a, a:hover{
     background: transparent;
 }
 
-a#timeBox{
-    margin-left: 20px;
+#timeBox{
+    margin-left: 25px;
+    margin-bottom: 20px;
 }
 
 a.jp-mute{
@@ -364,3 +365,4 @@ a.jp-mute{
 #rj-chat{
     margin-left: 20px;
 }
+
