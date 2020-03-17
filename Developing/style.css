@@ -366,3 +366,19 @@ a.jp-mute{
     margin-left: 20px;
 }
 
+.marginTop7{
+    margin-top: 7%;
+}
+
+iframe{
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.modal-content h1 {
+    font-family: trim-semibold;
+}
+
+.modal-content p {
+    font-family: 'Source Code Pro', monospace;
+}
