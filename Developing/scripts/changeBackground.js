@@ -31,6 +31,7 @@ function changeZone() {
             var logo = "LOGO-energetic-zone.svg";
             var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
             var sponsor_img = sponsor_imgs[0];
+            var nav_link = "#fde146";
             break;
         case 2:
             var zoneClass = "mellow";
@@ -43,6 +44,7 @@ function changeZone() {
             var logo = "LOGO-Mellow-zone.svg";
             var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
             var sponsor_img = sponsor_imgs[1];
+            var nav_link = "#d47097";
             break;
         case 3:
             var zoneClass = "twilight";
@@ -54,7 +56,8 @@ function changeZone() {
             var navBackgroundColor = "#be1e2d";
             var logo = "LOGO-Twilight-zone.svg";
             var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
-            var sponsor_img = sponsor_imgs[2];           
+            var sponsor_img = sponsor_imgs[2];
+            var nav_link = "#ec7323";           
             break;
         case 4:
             var zoneClass = "deep";
@@ -66,6 +69,7 @@ function changeZone() {
             var navBackgroundColor = "#7f4098";
             var logo = "LOGO-deep-zone.svg";
             var sponsor_img = sponsor_imgs[3];
+            var nav_link = "#0e2539";
             break;
     }
 
@@ -77,6 +81,7 @@ function changeZone() {
     document.getElementById("social-media").style.color = textColor2;
     document.getElementById("logo_image").src = logo;
     document.getElementById("sponsor_img_zone").src = sponsor_img;
+    document.getElementsByClassName("nav-color-script").style.color = nav_link;
     
     var bgColor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
     document.body.style.background = bgColor;
@@ -108,6 +113,7 @@ if (6 <= hour && hour < 12) {
     var logo = "LOGO-energetic-zone.svg";
     var playercolor = "#5eb546"
     var sponsor_img = sponsor_imgs[0];
+    var navLinkColor = "#fde146";
 }
 // 12pm - 6pm Mellow Zone  
 if (12 <= hour && hour < 18) {
@@ -121,6 +127,7 @@ if (12 <= hour && hour < 18) {
     var logo = "LOGO-Mellow-zone.svg";
     var playercolor = "#d47097"
     var sponsor_img = sponsor_imgs[1];
+    var navLinkColor = "#d47097";
     // playercolor = rjp-trackinfo-container
     //old
     // var zoneClass = "twilight";
@@ -141,10 +148,11 @@ if (18 <= hour && hour <= 23) {
     var y = "#ec7323";
     var textColor1 = "#ec7323";
     var textColor2 = "#be1e2d";
-    var navBackgroundColor = "#be1e2d";
+    var navBackgroundColor = "#ee7423";
     var logo = "LOGO-Twilight-zone.svg";
     var playercolor = "#ec7323"
     var sponsor_img = sponsor_imgs[2];
+    var navLinkColor = "#bf1e2e";
 // old
     // var zoneClass = "mellow";
     // var zoneText = "Mellow Zone";
@@ -166,8 +174,8 @@ if (0 <= hour && hour < 6) {
     var textColor2 = "#7f4098";
     var navBackgroundColor = "#7f4098";
     var logo = "LOGO-deep-zone.svg";
-    var playercolor = "#0e2539"
     var sponsor_img = sponsor_imgs[3];
+    var navLinkColor = "#0e2539";
 }
 // Old Times if need to go back
 // // 6am - 12pm Energetic Zone
@@ -228,6 +236,9 @@ document.getElementById("social-media").style.color = textColor2;
 document.getElementById("logo_image").src = logo;
 //document.getElementById("playerBox").style.backgroundColor = playercolor;
 document.getElementById("sponsor_img_zone").src = sponsor_img;
+document.getElementsByClassName("nav-color-script")[0].style.color = navLinkColor;
+document.getElementsByClassName("nav-color-script")[1].style.color = navLinkColor;
+document.getElementsByClassName("nav-color-script")[2].style.color = navLinkColor;
 
 var bgColor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
 document.body.style.background = bgColor;
