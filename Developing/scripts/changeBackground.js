@@ -109,11 +109,11 @@ if (6 <= hour && hour < 12) {
     var y = "#5eb546";
     var textColor1 = "#fde146";
     var textColor2 = "#fde146";
-    var navBackgroundColor = "#5eb546";
+    var navBackgroundColor = "#5bb646";
     var logo = "LOGO-energetic-zone.svg";
     var playercolor = "#5eb546"
     var sponsor_img = sponsor_imgs[0];
-    var navLinkColor = "#fde146";
+    var navLinkColor = "#fbe246";
 }
 // 12pm - 6pm Mellow Zone  
 if (12 <= hour && hour < 18) {
@@ -123,11 +123,11 @@ if (12 <= hour && hour < 18) {
     var y = "#d47097";
     var textColor1 = "#d47097";
     var textColor2 = "#76cdd9";
-    var navBackgroundColor = "#76cdd9";
+    var navBackgroundColor = "#d46f97";
     var logo = "LOGO-Mellow-zone.svg";
     var playercolor = "#d47097"
     var sponsor_img = sponsor_imgs[1];
-    var navLinkColor = "#d47097";
+    var navLinkColor = "#77ced9";
     // playercolor = rjp-trackinfo-container
     //old
     // var zoneClass = "twilight";
@@ -172,10 +172,10 @@ if (0 <= hour && hour < 6) {
     var y = "#0e2539";
     var textColor1 = "#0e2539";
     var textColor2 = "#7f4098";
-    var navBackgroundColor = "#7f4098";
+    var navBackgroundColor = "#7f3f98";
     var logo = "LOGO-deep-zone.svg";
     var sponsor_img = sponsor_imgs[3];
-    var navLinkColor = "#0e2539";
+    var navLinkColor = "#2c2869";
 }
 // Old Times if need to go back
 // // 6am - 12pm Energetic Zone
