@@ -129,7 +129,7 @@ if (12 <= hour && hour < 18) {
     var playercolor = "#d47097"
     var sponsor_img = sponsor_imgs[1];
     var navLinkColor = "#77ced9";
-    var chatTitleColor = "#77ced9";
+    var chatTitleColor = "#d46f97";
     
    
 }
@@ -195,23 +195,7 @@ var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + "
 //document.getElementById("playerBox").style.background = playercolor;
 
 
-/* window.setTimeout( "setbackground()", 30000); // 600000 milliseconds delay is 10 min
-var index = Math.round(Math.random() * 7);
-var ColorValue = "5eb546"; // default color - green (index = 0)
-if(index == 1)
-ColorValue = changeMoodOrange(); //yellow
-if(index == 2)
-ColorValue = changeMoodBlue(); //orange
-// if(index == 3)
-// ColorValue = "be1e2d"; //red
-// if(index == 4)
-// ColorValue = "d47097"; //light purple
-// if(index == 5)
-//  ColorValue = "76cdd9"; //blueish
-// if(index == 6)
-// ColorValue = "7f4098"; //purple
-// if(index == 7)
-// ColorValue = "0e2539"; //darkblue */
+
 
 
 }

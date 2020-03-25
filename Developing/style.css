@@ -186,7 +186,7 @@ font-family: time-lemoni;
 }
 #rj-player .rjp-player-container .jp-volume-bar-wrapper {
 
-    bottom: 20px;
+    bottom: 35px;
 }
 
 #rj-player .rjp-player-container .jp-mute, #rj-player .rjp-player-container .jp-unmute {
@@ -391,3 +391,44 @@ h2#zoneText.changeZoneClass{
 img{
     margin-top: -22px;
 }
+
+div.modal-content{
+    padding-top: 5%;
+}
+
+.input-txt::placeholder  {
+    font-family: trim-semibold;
+    font-weight: bold;
+  }
+
+  #rj-player .rjp-player-container .jp-volume-bar-value {
+    background: #ffffff;
+    height: 10px;
+    height: 10;
+    /* margin-bottom: 20px; */
+    margin-top: -30px;
+    /* margin-left: -20px; */
+  }
+
+  #rj-player .rjp-player-container .jp-mute, #rj-player .rjp-player-container .jp-unmute {
+    line-height: 1.5;
+    bottom: 38px;
+    background: transparent;
+    width: 40px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    img#sponsor_img_zone{
+        margin-top: 10%;
+    }
+    div#social-media{
+        margin-top: 135%;
+        display: flex;
+        margin-left: 30%;
+    }
+    a.socialMediaClass{
+        flex-grow: 0.5;
+    }
+}
+
