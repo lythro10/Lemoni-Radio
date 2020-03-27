@@ -417,6 +417,10 @@ div.modal-content{
     width: 40px;
 }
 
+#footerText{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+}
 
 @media only screen and (max-width: 600px) {
     img#sponsor_img_zone{
@@ -431,3 +435,4 @@ div.modal-content{
         flex-grow: 0.5;
     }
 }
+
