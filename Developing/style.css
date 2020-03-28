@@ -148,7 +148,7 @@ font-family: time-lemoni;
 
 
 #social-media{
-    margin-left: 72% ;
+    margin-left: 220% ;
 }
 
 #time{
@@ -369,6 +369,7 @@ a.jp-mute{
 
 .marginTopChat{
     padding-top: 104px;
+    padding-left: 10.5%;
 }
 
 iframe{
@@ -420,6 +421,13 @@ div.modal-content{
 #footerText{
     font-family: 'Source Code Pro', monospace;
     font-size: 12px;
+    margin-top: 7%;
+}
+
+img#sponsor_img_zone{
+    width: 91%;
+    margin-left: 3.1%;
+    height: 125%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -427,12 +435,15 @@ div.modal-content{
         margin-top: 10%;
     }
     div#social-media{
-        margin-top: 135%;
+        margin-top: -17%;
         display: flex;
         margin-left: 30%;
     }
     a.socialMediaClass{
         flex-grow: 0.5;
+    }
+    iframe{
+        position: relative  !important;
     }
 }
 
