@@ -12,7 +12,10 @@ src: url(SF_Think-Mono.otf);
     src: url(Trim-SemiBold.otf);
 }
 
-
+.ulWidth{
+    width: 100%;
+    text-align: right;
+}
    
 body {
     /* background: repeating-linear-gradient(90deg, #ffde22, #5eb546); */
@@ -224,6 +227,7 @@ font-family: time-lemoni;
 
 #logoContainer{
     margin-top: 7%;
+    display: flex;
 }
 
 .alert{
@@ -429,6 +433,7 @@ img#sponsor_img_zone{
     margin-left: 3.1%;
     height: 100%;
 }
+
 
 @media only screen and (max-width: 600px) {
     img#sponsor_img_zone{

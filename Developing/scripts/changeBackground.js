@@ -189,7 +189,7 @@ if (0 <= hour && hour < 6) {
 
 document.getElementById("content").setAttribute("class", zoneClass);
 document.getElementById("zoneText").innerText = zoneText;
-document.getElementById("navColor").style.backgroundColor = navBackgroundColor;
+//document.getElementById("navColor").style.backgroundColor = navBackgroundColor;
 //document.getElementById("timeBox").style.backgroundColor = navBackgroundColor;
 document.getElementById("timeBox").style.color = textColor1;
 document.getElementById("social-media").style.color = textColor2;
@@ -217,7 +217,7 @@ document.body.style.background = bgColor;
 
 var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
 //document.getElementById("playerBox").style.background = playercolor;
-console.log(iFrameWindow);
+
 
 }
 
