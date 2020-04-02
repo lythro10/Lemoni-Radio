@@ -95,8 +95,17 @@ function changeZone() {
     if (z > 4) { z = 1; }
 }
 
+
+
 function setbackground()
 {
+
+
+
+//iframe function
+const myIframe = document.getElementById("myframe");
+
+const iFrameWindow = myIframe.contentWindow;
 
 var date = new Date();
 var hour = date.getHours();
@@ -118,6 +127,7 @@ if (6 <= hour && hour < 12) {
     var zoneH1text = "Energetic Zone";
     var zonePtext = "Η energetic zone ανοίγει στις 6 τα ξημερώματα και κλείνει στις 12 το μεσημέρι προσφέροντας μια ενεργητική ατμόσφαιρα και μια δυναμική ροή, ικανή να σας κρατάει σε μια σχετική εγρήγορση. Ξεκινήστε τη μέρα σας με νερό και λίγες σταγόνες λεμόνι, φτιάξτε καφέ, και συντονιστείτε με το λεμόνι!.. θα σας κρατήσει συντροφιά με εξαίσιες μουσικές και λόγια, συντονισμένα στους πρωινούς βιορυθμούς.";
     var zoneFooterText = "#5bb646";
+    
 }
 // 12pm - 6pm Mellow Zone  
 if (12 <= hour && hour < 18) {
@@ -136,6 +146,7 @@ if (12 <= hour && hour < 18) {
     var zoneH1text = "Mellow Zone";
     var zonePtext = "Η mellow zone ανοίγει τις πόρτες της στις 12 το μεσημέρι και κλείνει στις 6 το απόγευμα. Τρέξαμε αρκετά το πρωί και έχουμε ανάγκη να ρίξουμε λίγο τους ρυθμούς μας, να κατευνάσουμε τα πνεύματα, να πάρουμε ανάσες και δυνάμεις για τη συνέχεια! Συντονιστείτε με το λεμόνι!.. θα σας κρατήσει συντροφιά με εξαίσιες μουσικές και λόγια, συντονισμένα στους μεσημεριανούς και απογευματινούς βιορυθμούς.";
     var zoneFooterText = "#d46f97";
+    var backgroundChatColor = "#d46f97";
    
 }
 // 6pm - 12am Twilight Zone 
@@ -206,13 +217,10 @@ document.body.style.background = bgColor;
 
 var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
 //document.getElementById("playerBox").style.background = playercolor;
-
-
-
-
+console.log(iFrameWindow);
 
 }
 
-setbackground();
+ setbackground();
  
 var timerZone = setInterval(setbackground, 1000);

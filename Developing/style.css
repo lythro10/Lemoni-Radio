@@ -427,7 +427,7 @@ div.modal-content{
 img#sponsor_img_zone{
     width: 91%;
     margin-left: 3.1%;
-    height: 125%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
