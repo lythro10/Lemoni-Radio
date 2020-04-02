@@ -226,7 +226,7 @@ font-family: time-lemoni;
 
 
 #logoContainer{
-    margin-top: 7%;
+    padding-top: 7%;
     display: flex;
 }
 
@@ -260,6 +260,7 @@ div.modal-content.container{
 .modal-content {
     padding-left: 4%;
     padding-right: 4%;
+    text-align: left;
 
 }
 
