@@ -451,5 +451,11 @@ img#sponsor_img_zone{
     iframe{
         position: relative  !important;
     }
+    div#logoContainer.container{
+        display: block;
+    }
+    button.btn.nav-link.nav-color-script{
+        margin-right: 0px;
+    }
 }
 
