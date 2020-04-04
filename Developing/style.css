@@ -15,6 +15,7 @@ src: url(SF_Think-Mono.otf);
 .ulWidth{
     width: 100%;
     text-align: right;
+    margin-right: 13%;
 }
    
 body {
@@ -435,6 +436,7 @@ img#sponsor_img_zone{
     height: 100%;
 }
 
+.list-inline-item{width: 100px;}
 
 @media only screen and (max-width: 600px) {
     img#sponsor_img_zone{
