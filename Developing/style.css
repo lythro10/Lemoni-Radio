@@ -401,10 +401,28 @@ img{
 
 div.modal-content{
     padding-top: 5%;
+    padding-bottom: 5%;
+}
+input::placeholder
+{
+    font-family: 'Source Code Pro', monospace;
 }
 
 .input-txt::placeholder  {
-    font-family: trim-semibold;
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+  }
+
+  ::-webkit-input-placeholder{
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+  }
+  ::-moz-placeholder{
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+  }
+  :-ms-input-placeholder{
+    font-family: 'Source Code Pro';
     font-weight: bold;
   }
 
