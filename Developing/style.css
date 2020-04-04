@@ -460,6 +460,8 @@ img#sponsor_img_zone{
 @media only screen and (max-width: 600px) {
     img#sponsor_img_zone{
         margin-top: 10%;
+        margin-left: 60%;
+        width: 200%;
     }
     div#social-media{
         margin-top: -17%;
@@ -477,6 +479,9 @@ img#sponsor_img_zone{
     }
     button.btn.nav-link.nav-color-script{
         margin-right: 0px;
+    }
+    .col-xs-6.col-sm-4.marginTopChat{
+        padding-top: 10%;
     }
 }
 

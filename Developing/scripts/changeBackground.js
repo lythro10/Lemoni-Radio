@@ -224,6 +224,8 @@ console.log('This was developed by ' + developerName + ' I can be reached at ' +
 
 }
 
+
+
  setbackground();
  
 var timerZone = setInterval(setbackground, 1000);
