@@ -218,6 +218,9 @@ document.body.style.background = bgColor;
 var playercolor = "repeating-linear-gradient(" + "90deg" + "," + x + "," + y + ")";
 //document.getElementById("playerBox").style.background = playercolor;
 
+var developerName = 'George Michael';
+var developerEmail = 'george.michael45@gmail.com';
+console.log('This was developed by ' + developerName + ' I can be reached at ' + developerEmail);
 
 }
 
